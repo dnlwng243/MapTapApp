@@ -14,7 +14,34 @@
             android:layout_height="wrap_content"
             android:text="Toggle"
             android:onClick="toggle"/>
+        <Button
+            android:id="@+id/button_trackMe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Track"
+            android:onClick="trackMe"/>
+        <Button
+            android:id="@+id/button_Search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:onClick="searchPOI"/>
+        <Button
+            android:id="@+id/button_Clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear"
+            android:onClick="clear"/>
     </LinearLayout>
+
+    <EditText
+        android:id="@+id/editText_Search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Location name"
+        />
 
     <fragment xmlns:android="http://schemas.android.com/apk/res/android"
               xmlns:map="http://schemas.android.com/apk/res-auto"
